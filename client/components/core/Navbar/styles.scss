@@ -1,0 +1,51 @@
+.containerNavbar {
+  width: 100% !important;
+}
+
+.linkNavbar {
+  font-family: Lato !important;
+  font-size: 13px !important;
+  color: black !important;
+  height: 49px;
+  width: 140px;
+  line-height: 50px !important;
+  text-align: center !important;
+  display: inherit;
+  border-radius: 0px !important;
+}
+
+.iconNavbar {
+  color: black !important;
+  height: 49px;
+  width: 49px;
+  border-radius: 0px;
+}
+//
+// .iconBurger {
+//   color: black !important;
+//   height: 49px;
+//   width: 50px;
+//   line-height: 49px !important;
+//   text-align: center !important;
+//   display: inherit !important;
+// }
+
+.iconNavRight {
+  float:right;
+}
+
+.linkNavbar:hover, .iconNavbar:hover, .iconBurger:hover {
+  background: #f2f2f2;
+}
+
+.centeredCol {
+  width: 100%;
+}
+
+.ms-Pivot-link {
+  color: white !important;
+}
+
+.ms-Pivot {
+  text-align: center !important;
+}
