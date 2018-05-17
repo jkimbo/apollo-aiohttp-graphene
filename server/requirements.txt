@@ -1,4 +1,4 @@
 graphql_ws
-aiohttp>=2.3.7
+aiohttp
 graphene==2.0.1
 aiohttp_cors

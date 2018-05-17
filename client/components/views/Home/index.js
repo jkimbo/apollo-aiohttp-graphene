@@ -7,6 +7,7 @@ import gql from 'graphql-tag'
 // Relative imports
 import { MainWrapper } from '../..'
 import { AuthService } from '../../../utils'
+import { TestMutComp } from './mut'
 
 class Home extends Component {
   constructor(props) {
@@ -26,11 +27,12 @@ class Home extends Component {
       }
     } = this.props
 
-    console.log(this.props)
+    // console.log(this.props)
 
     return (
       <MainWrapper>
-        {loading ? 'Loading' : JSON.stringify(patron)}
+        {/* {loading ? 'Loading' : JSON.stringify(patron)} */}
+        <TestMutComp />
         {/* <button onClick={() => this.login()}>Login</button> */}
       </MainWrapper>
     )
