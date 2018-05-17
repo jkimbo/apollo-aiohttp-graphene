@@ -38,7 +38,7 @@ async def subscriptions(request):
 app = web.Application()
 # app.router.add_get('/subscriptions', subscriptions)
 app.router.add_get('/', graphiql_view)
-app.router.add_get('/graphql', graphql_view)
+# app.router.add_get('/graphql', graphql_view)
 app.router.add_post('/graphql', graphql_view)
 
 # Configure default CORS settings.
@@ -51,7 +51,7 @@ cors = aiohttp_cors.setup(app, defaults={
 })
 
 # Configure CORS on all routes.
-for route in list(app.router.routes()):
-    cors.add(route)
+# for route in list(app.router.routes()):
+#     cors.add(route)
 
 web.run_app(app, port=8000)
