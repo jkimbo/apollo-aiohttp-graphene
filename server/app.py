@@ -11,7 +11,11 @@ from template import render_graphiql
 
 async def graphql_post(request):
     payload = await request.json()
-    response = await schema.execute(payload.get('query', ''), return_promise=True)
+    response = await schema.execute(
+        payload.get('query', ''),
+        variable_values=payload.get('variables', None),
+        return_promise=True
+    )
     data = {}
     if response.errors:
         data['errors'] = [format_error(e) for e in response.errors]
