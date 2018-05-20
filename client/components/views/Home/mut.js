@@ -51,7 +51,7 @@ class TestMutComp extends Component {
 // };
 
 const CREATE_PERSON = gql`
-  mutation createPerson($name: String!) {
+  mutation createPerson($name: String) {
     createPerson(name: $name) {
       ok
     }
